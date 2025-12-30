@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a66c2"/>
+      <stop offset="100%" style="stop-color:#0077b5"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="128" height="128" rx="24" fill="url(#bgGrad)"/>
+  <!-- LinkedIn icon simplified -->
+  <g fill="white">
+    <!-- Person icon -->
+    <circle cx="44" cy="38" r="12"/>
+    <rect x="32" y="56" width="24" height="40" rx="2"/>
+    <!-- Connection lines to n8n -->
+    <path d="M68 65 L88 65" stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path d="M68 75 L88 75" stroke="white" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <!-- Arrow -->
+    <path d="M82 55 L96 70 L82 85" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+</svg>
