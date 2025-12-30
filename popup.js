@@ -117,14 +117,13 @@ function showSuccess() {
   successMessage.classList.add('show');
   errorMessage.classList.remove('show');
   
-  // Fade out after 2 seconds
+  // Fade out after 2 seconds then close the popup
   setTimeout(() => {
     successMessage.classList.add('fadeOut');
     setTimeout(() => {
-      successMessage.classList.remove('show');
-      successMessage.classList.remove('fadeOut');
+      window.close(); // Ferme la popup de l'extension
     }, 300);
-  }, 2000);
+  }, 1700);
 }
 
 /**

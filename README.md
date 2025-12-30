@@ -2,7 +2,7 @@
 
 Extension Chrome pour envoyer des prospects LinkedIn vers n8n via webhook.
 
-![Version](https://img.shields.io/badge/version-1.5.1-blue)
+![Version](https://img.shields.io/badge/version-1.5.3-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
@@ -15,23 +15,29 @@ Extension Chrome pour envoyer des prospects LinkedIn vers n8n via webhook.
 - Statut de connexion (connecté ou non)
 
 ### 🏷️ Types de prospects
-- 🎯 Client (par défaut)
-- 🤝 Partenaire
-- 🔧 Prestataire
-- 🏢 Agence
-- 👔 Recrutement
+| Affichage | Valeur envoyée |
+|-----------|----------------|
+| 🎯 Client (par défaut) | `client` |
+| 🤝 Partenaire | `partenaire` |
+| 🔧 Prestataire | `prestataire` |
+| 🏢 Agence | `agence` |
+| 👔 Recrutement | `recrutement` |
 
 ### 🔥 Niveau d'intérêt
-- 🔥 Faible (par défaut)
-- 🔥🔥 Moyen
-- 🔥🔥🔥 Fort
+| Affichage | Valeur envoyée |
+|-----------|----------------|
+| 🔥 Faible (par défaut) | `1` |
+| 🔥🔥 Moyen | `2` |
+| 🔥🔥🔥 Fort | `3` |
 
 ### 🎬 Actions
-- ⏸️ Ne rien faire (par défaut)
-- 💬 Envoyer un DM sur LinkedIn
-- 📧 Envoyer un e-mail
-- 📞 Appeler
-- 🔄 Ajouter à une séquence
+| Affichage | Valeur envoyée |
+|-----------|----------------|
+| ⏸️ Ne rien faire (par défaut) | `none` |
+| 💬 Envoyer un DM sur LinkedIn | `dm_linkedin` |
+| 📧 Envoyer un e-mail | `email` |
+| 📞 Appeler | `call` |
+| 🔄 Ajouter à une séquence | `sequence` |
 
 ### 💬 Commentaire personnalisé
 Ajoutez une note pour chaque prospect.
@@ -132,6 +138,12 @@ Un overlay vert **"Prospect bien transmis !"** apparaîtra en cas de succès.
 ---
 
 ## 📝 Changelog
+
+### v1.5.3
+- ✨ La popup se ferme automatiquement après l'envoi réussi d'un prospect
+
+### v1.5.2
+- 📚 Documentation des valeurs envoyées (prospectType, interestLevel, action)
 
 ### v1.5.1
 - 🐛 Correction du blocage sur "Chargement..." (communication popup ↔ content script)
